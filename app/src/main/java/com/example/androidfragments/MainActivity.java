@@ -28,7 +28,6 @@ public class MainActivity extends LoggingActivity implements ListFragment.OnReci
 
     @Override
     public void onListRecipeSelected(int index) {
-
         ViewPagerFragment fragment = new ViewPagerFragment();
         Bundle bundle = new Bundle();
         bundle.putInt(ViewPagerFragment.KEY_RECIPE_INDEX, index);
