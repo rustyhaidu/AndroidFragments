@@ -18,9 +18,9 @@ public class ListFragment extends LoggingFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         Log.d(LoggingFragment.TAG, "onCreateView");
         OnRecipeSelectedInterface listener = (OnRecipeSelectedInterface) getActivity();
-        View view = inflater.inflate(R.layout.fragment_list, container, false);
+        View view = inflater.inflate(R.layout.fragment_recyclerview, container, false);
 
-        RecyclerView recyclerView = view.findViewById(R.id.listRecyclerView);
+        RecyclerView recyclerView = view.findViewById(R.id.recyclerView);
         ListAdapter listAdapter = new ListAdapter(listener);
         recyclerView.setAdapter(listAdapter);
 
