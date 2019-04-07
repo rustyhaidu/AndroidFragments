@@ -56,7 +56,7 @@ public class ViewPagerFragment extends LoggingFragment {
         /*TabLayout tabLayout = view.findViewById(R.id.tabLayout);
         tabLayout.setupWithViewPager(viewPager);*/
 
-        return inflater.inflate(R.layout.fragment_viewpager, container, false);
+        return view;
     }
 
     @Override
